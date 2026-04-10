@@ -1,6 +1,8 @@
 # IoT-milk-preservation
 ## Overview
-This project simulates an IoT system for monitoring **temperature** and **humidity** to preserve milk under optimal conditions. It uses an **ESP32 microcontroller**, a **DHT22 sensor**, an **LCD display**, RGB LEDs, a relay, and a buzzer. The system provides real-time alerts when conditions are unsafe.
+This project keeps milk fresh by monitoring, displaying, controlling, and giving warnings about temperature and humidity. A DHT22 sensor constantly monitors the conditions inside the milk storage area. An LCD screen displays the live readings, showing temperature in Celsius and humidity as a percentage.
+I was in charge of the temperature settings. The best range for storing milk is between 2°C and 5°C. For controlling the environment, a relay turns the cooling system on when it gets too warm and off when it gets too cold. For warnings, if the temperature goes above 5°C, a red light and buzzer activate. Above 8°C, a flashing red light signals serious danger. Below 2°C, a blue light and buzzer warn against freezing damage. The system also monitors humidity and displays warnings for low, high, or dangerous levels. An RGB light changes color to give instant visual warnings without needing to read the screen.
+
 
 ## Features
 - Reads temperature and humidity using DHT22
